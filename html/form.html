@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../script/main.js"></script>
+    <link rel="stylesheet" href="../style/form.css">
+    <title>Аренда автомобилей - Главная</title>
+</head>
+<body>
+    <div class="background">
+        <header>
+            <nav>
+                <div><a href="../html/index.html"><img class="logo" src="../images/Group 1.svg" alt=""></a></div>
+                <div><a href="../html/index.html">Главная</a></div>
+                <div><a href="../html/form.html">Арендовать автомобиль</a></div>
+            </nav>
+        </header>
+        <main>
+            <form id="post" action="#">
+                <div class="form">
+                    <input
+                    id="name" 
+                    name="ФИО"
+                    required 
+                    placeholder="Введите ФИО" 
+                    type="text">
+                    <input 
+                    id="tel"
+                    name="Номер телефона"
+                    required 
+                    placeholder="Введите номер телефона"
+                    type="tel">
+                    <input
+                    id="num" 
+                    name="Номер прав"
+                    required 
+                    placeholder="Номер водительских прав" 
+                    type="number">
+                    <div>
+                        <label style="font-size: 15px;" for="date">Дата выдачи прав:</label>
+                        <input
+                        id="date"
+                        name="Дата выдачи прав"
+                        required 
+                        placeholder="Дата выдачи прав" 
+                        type="date">
+                    </div>
+                    <input 
+                    id="place"
+                    name="Место выдачи прав"
+                    required 
+                    placeholder="Место выдачи прав" 
+                    type="text">
+                    <input 
+                    id="com"
+                    name="Марка"
+                    required 
+                    placeholder="Марка автомобиля" 
+                    type="text">
+                    <input 
+                    id="dur"
+                    name="Срок"
+                    required 
+                    placeholder="Срок аренды" 
+                    type="datetime">
+                    <button onclick="return post()" type="submit">Запросить аренду</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div><a href="../html/index.html"><img class="logo" src="../images/Group 1.svg" alt=""></div>
+            <div><a href="../html/index.html">Главная</a></div>
+            <div><a href="../html/form.html">Аренда</a></div>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <p style="font-weight: bold;">Все права защищены</p>
+                <p style="font-weight: bold;">Поддержка:</p>
+                <p style="font-weight: bold;">+7 999 999 99 99</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
